@@ -1,1088 +1,374 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>vCard - Personal Portfolio</title>
-
-  <!--
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
-
-  <!--
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-
-  <!--
-    - google font link
-  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Portfolio</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
 </head>
 
 <body>
+    <div id="mobile-menu-open" class="shadow-large">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    <!-- End #mobile-menu-toggle -->
+    <header>
+        <div id="mobile-menu-close">
+            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        <ul id="menu" class="shadow">
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#experience">Experience</a>
+            </li>
+            <li>
+                <a href="#education">Education</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#skills">Skills</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </header>
+    <!-- End header -->
 
-  <!--
-    - #MAIN
-  -->
+    <div id="lead">
+        <div id="lead-content">
+            <h1>Mirakram Aghalarov</h1>
+            <h2>Machine Learning / AI Engineer</h2>
+            <a href="#" class="btn-rounded-white">Download Resume</a>
+        </div>
+        <!-- End #lead-content -->
 
-  <main>
+        <div id="lead-overlay"></div>
 
-    <!--
-      - #SIDEBAR
-      dfdf
-    -->
+        <div id="lead-down">
+            <span>
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </span>
+        </div>
+        <!-- End #lead-down -->
+    </div>
+    <!-- End #lead -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="heading">About Me</h2>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        Experienced Deep Learning engineer from master’s degree with 3 years of experience on Computer vision, Natural Language Processing and Python firmware. Easily adaptable to new environment because of experience in numerous internships, workplace types. Gained habits to write clean and structured code with proven presentation skills. Portfolio can be found in m1rakram.github.io
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End #about -->
+
+    <div id="experience" class="background-alt">
+        <h2 class="heading">Experience</h2>
+        <div id="experience-timeline">
     
-    <aside class="sidebar" data-sidebar>
-
-      <div class="sidebar-info">
-
-        <figure class="avatar-box">
-          <img src="./assets/images/my_avatar.png" alt="Richard hanrick" width="80"> 
-        </figure>
-
-        <div class="info-content">
-          <h1 class="name" title="Mirakram Aghalarov">Mirakram Aghalarov</h1>
-
-          <p class="title">Machine Learning Engineer</p>
-        </div>
-
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-
-      </div>
-
-      <div class="sidebar-info_more">
-
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
+            <div data-date="December 2024 – Present">
+                <h3>State Oil Company of the Republic of Azerbaijan (SOCAR)</h3>
+                <h4>Senior Deep Learning Specialist</h4>
+                <ul>
+                    <li>Built full on-prem chatbot solution for SOCAR based on RAG pipeline</li>
+                    <li>Increased effectiveness of OCR with custom-built modules</li>
+                    <li>Designed architecture for full scalability</li>
+                    <li>Collaborated with domain experts to improve knowledge retrieval and answer generation</li>
+                </ul>
             </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:mirakramagalarov@gmail.com" class="contact-link">mirakramagalarov@gmail.com</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
-
-              <a href="tel:+12133522795" class="contact-link">+994 50 212 16 79</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-
-              <time datetime="1998-11-02">November 2, 1998</time>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>Baku, Azerbaijan</address>
-            </div>
-
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="https://www.facebook.com/mirakram.aghalarov/" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://www.linkedin.com/in/mirakram-aghalarov-502668144/" class="social-link">
-              <img src="./assets/images/in_icon.png" alt="mobile app icon" width="40">
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://www.instagram.com/aghalarov.mirakram/" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
-
-      </div>
-
-    </aside>
-
-
-
-
-
-    <!--
-      - #main-content
-    -->
-
-    <div class="main-content">
-
-      <!--
-        - #NAVBAR
-      -->
-
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Certificates</button>
-          </li>
-
-
-
-        </ul>
-
-      </nav>
-
-
-
-
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about  active" data-page="about">
-
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-
-        <section class="about-text">
-          <p>
+    
+            <div data-date="February 2023 – November 2024">
+                <h3>PRODATA</h3>
             
-            Graduate from master’s degree with 1 year experience on Computer vision and Python firmware. 
-            Easily adaptable to new environment because of experience in numerous internships. 
-            Gained habits to write clean and structured code with proven presentation skills.
-            Competitions, group projects have given strong patience and debugging skills for 
-            troubleshooting and problem solving. Have met with many people around the world in both conferences and 
-            abroad experience. 
-            <br>
-            Kind, motivated, hobbist, keen to learn/teach. Fond of competitions, hackatons especially in space industry.
-          </p>
-
-        </section>
-
-
-        <!--
-          - service
-        -->
-
-        <section class="service">
-
-          <h3 class="h3 service-title">What i'm doing</h3>
-
-          <ul class="service-list">
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/DL.png
-                " alt="design icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Deep Learning</h4>
-
-                <p class="service-item-text">
-                  Searching for SoT implementations from research papers and make suitable model
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/T.png" alt="Web development icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Teaching AI and ML</h4>
-
-                <p class="service-item-text">
-                  Hourly-based teacher for "AI and ML fundamentals" at university
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/RD.png" alt="mobile app icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Research & Development</h4>
-
-                <p class="service-item-text">
-                  Keen on maximizing results and minimizing limitations
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Photography</h4>
-
-                <p class="service-item-text">
-                  Hobbyist level photography lover
-                </p>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-
-        <!--
-          - testimonials
-        
-
-        <section class="testimonials">
-
-          <h3 class="h3 testimonials-title">Testimonials</h3>
-
-          <ul class="testimonials-list has-scrollbar">
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
+                <div class="role-entry">
+                    <h4>Senior Machine Learning Engineer <span class="promotion-tag">(Promoted)</span></h4>
+                    <div class="date-sub">May 2024 – November 2024</div>
+                    <ul>
+                        <li>Led ML and R&D team in national LLM benchmarking and fine-tuning initiatives</li>
+                        <li>Developed anomaly detection for GIS tractor tracks achieving 94% F1-score</li>
+                        <li>Created no-code video clustering and super-resolution for satellite imagery</li>
+                        <li>Built NDVI-based agricultural analysis and CRM decision-making tools</li>
+                    </ul>
                 </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
+            
+                <div class="role-entry">
+                    <h4>Machine Learning Engineer</h4>
+                    <div class="date-sub">February 2023 – May 2024</div>
+                    <ul>
+                        <li>Improved CV model efficiency via JPEG-based training (10× GPU load reduction)</li>
+                        <li>Created AI Call Center POC with RASA, RAG, ASR and TTS</li>
+                        <li>Delivered multiple POCs across agriculture and NLP sectors</li>
+                    </ul>
                 </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-          -->
-
-        </section>
-
-
-        <!--
-          - testimonials modal
-        -->
-
-        <div class="modal-container" data-modal-container>
-
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/my-avatar.png" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
-
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
             </div>
-
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-
-              <time datetime="2021-06-14">14 June, 2021</time>
-
-              <div data-modal-text>
-                <p>
-                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                </p>
-              </div>
-
+    
+            <div data-date="April 2022 – December 2022">
+                <h3>AIKO - Autonomous Space Missions</h3>
+                <h4>Deep Learning Engineer</h4>
+                <ul>
+                    <li>Improved Mars segmentation accuracy using multi-task learning</li>
+                    <li>Implemented UDA methods increasing model accuracy by 8%</li>
+                    <li>Generated closed-source datasets for planetary mission AI tasks</li>
+                </ul>
             </div>
+    
+            <div data-date="July 2019 – September 2019">
+                <h3>BP</h3>
+                <h4>Instrumentation and Control Engineering Intern</h4>
+                <ul>
+                    <li>Developed C# simulation app for unit circuit logic validation</li>
+                    <li>Performed obsolete device study using DWH and historical data</li>
+                </ul>
+            </div>
+    
+            <div data-date="February 2018 – August 2018">
+                <h3>DN TECHNOLOGIES</h3>
+                <h4>Firmware Developer</h4>
+                <ul>
+                    <li>Built image and sensor data interface for Raspberry Pi and STM32</li>
+                    <li>Optimized Raspberry Pi efficiency for real-time ML decision output</li>
+                </ul>
+            </div>
+    
+        </div>
+    </div>
+    <!-- End #experience -->
 
-          </section>
-
+    <div id="education">
+        <h2 class="heading">Education</h2>
+    
+        <div class="education-block">
+            <h3>Baku Higher Oil School</h3>
+            <span class="education-date">September 2023 – Present</span>
+            <h4>Doctor of Philosophy (PhD) in Computer Science</h4>
+            <p>
+                PhD Candidate researching unsupervised domain adaptation for oil spill detection using satellite imagery. Working with data from Sentinel Hub and Azercosmos, contributing to international publications.
+            </p>
         </div>
 
 
-        <!--
-          - clients
-        -->
+        <div class="education-block">
+            <h3>Politecnico di Torino</h3>
+            <span class="education-date">2020 – 2022</span>
+            <h4>Master of Science in Data Science and Engineering</h4>
+            <p>
+                Gained advanced training in data analytics, machine learning, and engineering systems. Focused on real-world AI applications, including research in semantic segmentation and domain adaptation for space missions.
+            </p>
+        </div>
+    
 
-        <section class="clients">
+    
+        <div class="education-block">
+            <h3>Baku Higher Oil School</h3>
+            <span class="education-date">2015 – 2020</span>
+            <h4>Bachelor's Degree in Process Automation Engineering</h4>
+            <p>
+                Gained strong foundation in automation systems, control engineering, and embedded systems. Recognized with multiple awards for scientific contributions and project excellence.
+            </p>
+        </div>
+    </div>
+    <!-- End #education -->
 
-          <h3 class="h3 clients-title">Companies</h3>
+    <div id="projects" class="background-alt">
+        <h2 class="heading">Projects</h2>
+        <div class="container">
+            <div class="row">
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/rag.png" style="width: 100%; max-width: 300px; height: auto;" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>On-Prem RAG LLM with OCR capabilities</h3>
+                        <p>
+                            Project is designed to be used in internal system of the company and fully build on-premises without cloud connections. Completely modular architecture has been built and it allowed for further scalability with standardized API structure. ElasticSearch has been used for Knowledge Retrieval.
+                        </p>
+                        <a href="#">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
 
-          <ul class="clients-list has-scrollbar">
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/callcenter.png" style="width: 100%; max-width: 300px; height: auto;"  />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>AI Call Center</h3>
+                        <p>
+                            Project was designed to serve massive amount of customers in low resource language (Azerbaijani). I have built Architecture of the solution and technology used. Created MVP version based on telegram bot for demonstration. Project included ASR, TTS, RAG, RASA.
+                        </p>
+                        <a href="#">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
 
-            <li class="clients-item">
-              <a href="https://www.aikospace.com/">
-                <img src="./assets/images/logo1.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="https://www.bp.com/en_az/azerbaijan/home.html">
-                <img src="./assets/images/logo-2-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="https://caspianic.com/">
-                <img src="./assets/images/logo-3-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-4-color.png" alt="client logo">
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #RESUME
-      -->
-
-      <article class="resume" data-page="resume">
-
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Education</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Politecnico di Torino</h4>
-
-              <span>2020 — 2022</span>
-
-              <p class="timeline-text">
-                MSc Data Science and Engineering
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Baku Higher Oil School</h4>
-
-              <span>2015 — 2020</span>
-
-              <p class="timeline-text">
-                BEng Process Automation Engineering
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Experience</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Deep Learning Intern | AIKO - Autonomous Space Missions</h4>
-
-              <span>04/2022 — 12/2022</span>
-
-              <p class="timeline-text">
-                • Achieved superior result on Semantic Segmentation by applying state of art models and mathematical solutions to overcome challenges of the dataset by improving 30% accuracy on minority class on Convolutional Neural Networks (CNN).<br>
-                <br>• Made research about domain adaptation methods and created novel 3-stage unsupervised domain adaptation mechanism on multi-task learning model. Increased feature extraction capability by using unsupervised learning and self-training over 40%.<br>
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/llmspace.png" style="width: 100%; max-width: 300px; height: auto;"  />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>LLM Benchmarking Space</h3>
+                        <p>
+                            The Azerbaijani LLM Leaderboard is a Hugging Face Space offering a transparent and community-driven platform to rank and evaluate open‑source Azerbaijani language models. The leaderboard enables researchers and developers to browse model performance, apply filters based on specific benchmarks, and submit their own LLMs for evaluation—advancing Azerbaijani NLP through collaborative benchmarking                        
+                        </p>
+                        <a href="#">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
                 
-                <br>• Increased robustness of the model by 10% with transformer-based architecture.
-
-
-
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Software Developer Intern | Caspian Innovation Center LLC</h4>
-
-              <span>02/2020 — 04/2020</span>
-
-              <p class="timeline-text">
-                Worked on “Room Reservation app for Meetings” for android devices alongside with my bachelor thesis.
-              </p>
-
-            </li>
-
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Instrumentation and Control Engineering Intern | BP AGT (Azerbaijan, Georgia, Turkey)</h4>
-
-              <span>07/2019 — 09/2019</span>
-
-              <p class="timeline-text">
-                • Contributed for factory acceptance test by creating simulation software in C# for safe gas release scheme.
-                <br><br>• Corrected mismatching between actual devices in platforms and obsolescence database
-              </p>
-
-            </li>
-            
-            
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Firmware Developer | DN Technologies LLC</h4>
-
-              <span>02/2018 — 08/2018</span>
-
-              <p class="timeline-text">
-                • Optimized latency of raspberry by applying firmware corrections (Python) and OS modifications (Linux)
-                <br><br>• Created sensor-motor architecture to test designs of mechanical engineers.
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="skill">
-
-          <h3 class="h3 skills-title">My skills</h3>
-
-          <ul class="skills-list content-card">
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">PyTorch   | |   Tensorflow   | |   Numpy | |  Pandas   | |  MapReduce   | | PySpark</h5>
-                <data value="80"></data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 0%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Python | | C | | C# | | C++ | | Java | | SQL | | MongoDb </h5>
-                <data value="70"></data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 0%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Windows | | Ubuntu | | Amazon AWS EC2 | | Colab Notebooks | | MicroControllers</h5>
-                <data value="90"></data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 0%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">MS Office | | Git | | MATLAB | | Jira | | Confluence | | LATEX</h5>
-                <data value="50"></data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 0%;"></div>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #PORTFOLIO
-      -->
-
-      <article class="portfolio" data-page="portfolio">
-
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Computer Vision</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Software Development</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>IOT Applications</button>
-            </li>
-
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Computer Vision</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Software Development</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>IOT Applications</button>
-              </li>
-
-            </ul>
-
-          </div>
-
-          <ul class="project-list">
-            <li class="project-item  active" data-filter-item data-category="Computer Vision">
-              <a href="https://github.com/m1rakram/MTL_thesis">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/synreal.png" alt="brawlhalla" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Multi-Task Learning on Synthetic Images of Mars</h3>
-
-                <p class="project-category">Computer Vision</p>
-
-              </a>
-            </li>
-            
-            <li class="project-item  active" data-filter-item data-category="Computer Vision">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/MTL_real.png" alt="brawlhalla" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Multi-Task Learning on Real Images of Mars</h3>
-
-                <p class="project-category">Computer Vision</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="Computer Vision">
-              <a href="https://github.com/m1rakram/BiseNetv1-FDA">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/architecture.png" alt="finance" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Multi-Level Domain Adaptation for Real-Time Semantic Segmentation</h3>
-
-                <p class="project-category">Computer Vision</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="https://github.com/m1rakram/Can_of_Duty">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/canofdut.png" alt="orizon" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Can of Duty - Information Receiver Station Software</h3>
-
-                <p class="project-category">Software Development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="https://github.com/m1rakram/smart_home">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/smart_home.png" alt="fundo" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Smart Home </h3>
-
-                <p class="project-category">Android Development with IOT connectivity</p>
-
-              </a>
-            </li>
-
-            
-
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #certificates
-      -->
-
-      
-
-      <article class="certificates" data-page="certificates">
-
-        <header>
-          <h2 class="h2 article-title">certificates</h2>
-        </header>
-
-        <section class="certificates-posts">
-
-          <ul class="certificates-posts-list">
-
-            <li class="certificates-post-item">
-              <a href="#">
-      
-                <figure class="certificates-banner-box">
-                  <img src="./assets/images/conference.png" alt="2nd Place in Scientific Conference at BHOS" loading="lazy">
-                </figure>
-      
-                <div class="certificates-content">
-      
-                  <div class="certificates-meta">
-                    <p class="certificates-category">Software Development</p>
-      
-                    <span class="dot"></span>
-      
-                    <time datetime="2022-02-23">June, 2019</time>
-                  </div>
-      
-                  <h3 class="h3 certificates-item-title">2nd Place in Scientific Conference at BHOS</h3>
-      
-                  <p class="certificates-text">
-                    Participated in Scientific Conference with "Tensorflow Road Assistant" project.
-                  </p>
-      
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/gpu.png" style="width: 100%; max-width: 300px; height: auto;" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>GPU optimization with JPEG</h3>
+                        <p>
+                            This project introduces an efficient image processing pipeline designed for edge devices, improving speed by 2.8× with only a 2% loss in accuracy. It uses JPEG's DCT coefficients as input to a CNN and applies a Teacher-Student SSL approach to maintain performance while reducing computation.                        </p>
+                        <a href="#">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
                 </div>
-      
-              </a>
-            </li>
+                <!-- End .project -->
 
-            <li class="certificates-post-item">
-              <a href="#">
-
-                <figure class="certificates-banner-box">
-                  <img src="./assets/images/cansat.png" alt="2nd place in CanSat Azerbaijan 2019" loading="lazy">
-                </figure>
-
-                <div class="certificates-content">
-
-                  <div class="certificates-meta">
-                    <p class="certificates-category">Software Development</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">30 June, 2019</time>
-                  </div>
-
-                  <h3 class="h3 certificates-item-title">2nd place in CanSat Azerbaijan 2019</h3>
-
-                  <p class="certificates-text">
-                    Constructed satellite model and ground control station with team of 4.
-                  </p>
-
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/tts.jpeg" style="width: 100%; max-width: 300px; height: auto;"  />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Open-source ASR & TTS models for Azerbaijani </h3>
+                        <p>
+                            Pichilti‑base‑v1 offers automatic speech recognition using a self‑supervised fine‑tuned Whisper decoder, achieving lower character error rates and efficient performance on Azerbaijani audio. Meanwhile, SARA_TTS complements this by providing high-quality Azerbaijani text-to-speech, trained on BHOSAI’s own voice dataset (e.g., “TTS_book_sounds”), enabling natural voice synthesis for applications like audiobooks or voice assistants.                    
+                        </p>
+                        <a href="#">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
                 </div>
+                <!-- End .project -->
 
-              </a>
-            </li>
-
-            <li class="certificates-post-item">
-              <a href="#">
-
-                <figure class="certificates-banner-box">
-                  <img src="./assets/images/busy_edu.png" alt="Business Edcuation for Engineers Training Certificate" loading="lazy">
-                </figure>
-
-                <div class="certificates-content">
-
-                  <div class="certificates-meta">
-                    <p class="certificates-category">Extra-Curricular</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">April 2, 2019</time>
-                  </div>
-
-                  <h3 class="h3 certificates-item-title">Business Edcuation for Engineers Training Certificate</h3>
-
-                  <p class="certificates-text">
-                    Trainings were based on leadership, teamwork, time management, risk management.
-                  </p>
-
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/thesis.png" style="width: 100%; max-width: 300px; height: auto;"  />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Unsupervised Domain Adaptation for Mars Rover Mission </h3>
+                        <p>
+                            This project tackles vision-based navigation for Mars exploration through two tasks: multi-task learning for rovers and semantic segmentation for drones, both enhanced by unsupervised domain adaptation. The rover model combines semantic segmentation and image classification using synthetic and real datasets (AI4Mars, PanCam), while the drone model uses synthetic training and real images from NASA’s Ingenuity logs.               </p>
+                        <a href="#">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
                 </div>
-
-              </a>
-            </li>
-
-            <li class="certificates-post-item">
-              <a href="#">
-
-                <figure class="certificates-banner-box">
-                  <img src="./assets/images/tecis.png" alt="Appreciation Certificate for volunteering in TECIS-2018 Scientific Conference" loading="lazy">
-                </figure>
-
-                <div class="certificates-content">
-
-                  <div class="certificates-meta">
-                    <p class="certificates-category">Extra-Curricular</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Sep 15, 2018</time>
-                  </div>
-
-                  <h3 class="h3 certificates-item-title">Appreciation Certificate for volunteering in TECIS-2018 Scientific Conference</h3>
-
-                  <p class="certificates-text">
-                    Participated in organization of TECIS 2018 in Baku and listened researh works of well-known professors
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="certificates-post-item">
-              <a href="#">
-
-                <figure class="certificates-banner-box">
-                  <img src="./assets/images/fair.png" alt="1st Place in Winter Science Fair" loading="lazy">
-                </figure>
-
-                <div class="certificates-content">
-
-                  <div class="certificates-meta">
-                    <p class="certificates-category">Internet of Things</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Dec 28, 2017</time>
-                  </div>
-
-                  <h3 class="h3 certificates-item-title">1st Place in Winter Science Fair</h3>
-
-                  <p class="certificates-text">
-                    Constructed Android controlled and Automatic plant watering system.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            
+                <!-- End .project -->
 
 
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #CONTACT
-      -->
-
-      <article class="contact" data-page="contact">
-
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
-
-        
-
-        <section class="contact-form">
-
-          <h3 class="h3 form-title">Contact Form</h3>
-
-          <form action="#" class="form" data-form>
-
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
             </div>
+        </div>
+    </div>
+    <!-- End #projects -->
 
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+    <div id="skills">
+        <h2 class="heading">Skills</h2>
+        <ul>
+            <li>Python</li>
+            <li>Deep Learning</li>
+            <li>Machine Learning</li>
+            <li>LLM</li>
+            <li>Docker</li>
+            <li>OpenwebUI</li>
+            <li>LLaMa.cpp</li>
+            <li>Langfuse</li>
+            <li>Linux</li>
+            <li>C</li>
+            <li>C#</li>
+            <li>C++</li>
+            <li>PyTorch</li>
+            <li>Transformers</li>
+            <li>MLFlow</li>
+            <li>Edge Computing</li>
+            <li>GIS</li>
+            <li>Satellite Imagery</li>
+            <li>Computer Vision</li>
+            <li>Voice Processing</li>
+            <li>Text Processing</li>
+            <li>Model Context Protocol</li>
+            <li>FastAPI</li>
+            <li>ElasticSearch</li>
+            <li>SQL</li>
+            <li>noSQL</li>
+        </ul>
+    </div>
+    <!-- End #skills -->
 
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
-
-          </form>
-
-        </section>
-
-      </article>
-
+    <div id="contact">
+        <h2>Get in Touch</h2>
+        <p>Email: <a href="mailto:youremail@example.com" style="color: white;">youremail@example.com</a></p>
+        <p>Phone: <a href="tel:+1234567890" style="color: white;">+1 (234) 567-890</a></p>
+    
     </div>
 
-  </main>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5 copyright">
+                    <p>
+                        Copyright &copy; <span id="current-year">2025</span> Mirakram Aghalarov
+                    </p>
+                </div>
+                <div class="col-sm-2 top">
+                    <span id="to-top">
+                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <div class="col-sm-5 social">
+                    <ul>
+                        <li>
+                            <a href="https://github.com/m1rakram" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/mirakram-aghalarov/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://huggingface.co/MirakramAghalarov" target="_blank">
+                                <img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="Hugging Face" style="height: 20px; vertical-align: middle;">
+                            </a>
+                        </li>
 
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
 
-
-
-
-
-  <!--
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
-
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/scripts.min.js"></script>
 </body>
 
 </html>
+    
